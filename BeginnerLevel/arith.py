@@ -1,0 +1,16 @@
+a=1
+b=2
+c=4
+d=9
+f=6
+q=8
+l=10
+x=7
+y=15
+z=12
+print(a+b)
+print(l/b)
+print(y**b)
+print(x-l)
+print(d%c)
+print(z*e)
