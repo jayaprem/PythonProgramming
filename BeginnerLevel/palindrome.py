@@ -7,6 +7,6 @@ while(t>0):
 	t=t/10;
 	
 if(n==sum):
-	print "palindrome"
+	print "yes"
 else:
-	print "not a palindrome"
+	print "no"
