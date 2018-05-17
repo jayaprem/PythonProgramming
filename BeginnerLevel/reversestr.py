@@ -1,2 +1,6 @@
 x=raw_input()
-print x[::-1]
+if x.isalpha():
+	print x[::-1]
+
+else:
+	print "enter a string value"
