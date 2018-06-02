@@ -4,7 +4,7 @@ list2=[]
 count=0
 for i in range(0,n):
     r=int(input())
-    if(r.isdigit()):
+    if(type(r)==int):
         list1.append(r)
 for j in range(0,n):
     c=list1.count(list1[j])
