@@ -1,4 +1,0 @@
-list=[1,2,3,4,5,6]
-n=int(input())
-l=len(list)
-print list[n-1:l]+list[0:n-1]
