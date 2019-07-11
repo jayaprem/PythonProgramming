@@ -20,7 +20,7 @@ try:
     if arr[0] == 'search':
         arr.pop(0)
         for j in search(" ".join(arr), tld="co.in", stop=2, pause=2):
-            web.open_new_tab(j)
+            web.open_new(j)
             audio = speechToText()
             s = speechToText()
             if s == 'close':
