@@ -25,6 +25,8 @@ try:
             s = speechToText()
             if s == 'close':
                 os.system("taskkill /im chrome.exe /f")
+            else:
+                print('esrtrytuio')
 
 except Exception:
     print("something went wrong")
