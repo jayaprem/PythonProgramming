@@ -9,12 +9,9 @@ try:
     s=r.recognize_google(audio)
     arr=s.split()
     if arr[0]=='search':
-        for j in search(arr[1], tld="co.in",stop=10,pause=2):
+        arr.pop(0)
+        for j in search("".join(arr), tld="co.in",stop=10,pause=2):
             print(j)
 
 except Exception:
     print("something went wrong")
-
-NOTE:INSTALL ------ https://www.geeksforgeeks.org/performing-google-search-using-python-code/(refer)
-pip install beautifulsoup4 //python library for pulling data out of html and xml files
-pip install google
