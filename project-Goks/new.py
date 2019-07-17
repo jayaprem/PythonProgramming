@@ -34,11 +34,10 @@ try:
             page = requests.get(j)
             soup = BeautifulSoup(page.content, 'html.parser')
             for a in soup.findAll('p'):
-                if len(a.text) != 0:
-                    t = t + 1
-                    if (t == 1):
-                        s = a.text
-
+                    if len(a.text)!=0:
+                    s=a.text
+                    break
+    print(s)
     myobj = gTTS(s, lang='en')
     myobj.save("welcome.mp3")
     pl = vlc.MediaPlayer("welcome.mp3")
